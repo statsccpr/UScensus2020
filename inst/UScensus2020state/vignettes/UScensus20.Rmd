@@ -1,0 +1,74 @@
+---
+title: "UScensus20"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{UScensus20}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+```
+The UScensus2020 package consists of the Decennial census(Redistricting file) data at various levels and the related shape files. At present it has tables P1, p2, p3, p4,p5 and H1 data tables with more tables being added when the new census data gets released.
+
+Data available in this package follows NAD83 CRS (can be checked using sf::st_crs())
+
+The data is segregated using the census hierarchy and is available for the state, county, tract, block ,city and the blockgrouplevel.
+
+## Census hierarchy 
+![](/home/smodi/censushierarchy.jpg)
+(source:https://www.census.gov/newsroom/blogs/random-samplings/2014/07/understanding-geographic-relationships-counties-places-tracts-and-more.html)
+
+## Installation
+```{r eval=FALSE, include=TRUE}
+install.packages("UScensus2020")
+library(UScensus2020)
+```
+
+The data packages can be installed with the install function in the main package
+```{r eval=FALSE, include=TRUE}
+#installs the county package
+UScensus2020::install.county()
+#installs the tract package
+UScensus2020::install.tract()
+#installs the cdp package
+UScesnsus2020::install.cdp()
+#installs the block group package (warning: this package is quite large)
+UScensus2020::install.blockgroup()
+#installs the block package (warning: this package is very large and requires a sufficient amount of space)
+UScensus2020::install.block()
+```
+
+##Helper functions
+
+There are several functions in the main package that are used to access the data
+
+## Demographics
+Demographics allows the user to pull the 
+
+Naming convention
+How the states and dataframe are named
+The block situation
+bUILD SCRIPTS to retrive the data
+demographic function
+msa
+install.county function
+census apis
+data dictonary
+geohashing/precomputing indexes
+Tutorials:
+How to plot the data (chorolpleth maps)
+regression for prediction analysis
+Further reading
+How drat and github actions are used here
+how to contribute
+further updates
+building the data from the scratch
+future updates: the polyclipper function and the comment(x)for regular experssions. Also, a version without the apis

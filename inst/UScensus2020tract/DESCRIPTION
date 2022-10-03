@@ -1,0 +1,14 @@
+Package: UScensustract20
+Title: Provides tract level data for the 2020 United States census
+Version: 0.0.0.9000
+Authors@R: 
+    person("Shreshtha", "Modi", , "modishreshtha48@gmail.com", role = c("aut", "cre"))
+Description:  A data package for the US census 2020 package. Provides tract level data and related shapefiles
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Compression: xz
+Depends: R (>= 2.10)
+Language: es
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1

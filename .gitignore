@@ -2,4 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-inst/*/data/*.rda
+inst/UScensus2020cdp/data/*.rda
+inst/UScensus2020county/data/*.rda
+inst/UScensus2020state/data/*.rda
+inst/UScensus2020tract/data/*.rda
+
