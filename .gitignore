@@ -2,6 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+*.Rout
 inst/UScensus2020cdp/data/*.rda
 inst/UScensus2020county/data/*.rda
 inst/UScensus2020state/data/*.rda
