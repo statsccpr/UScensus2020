@@ -3,6 +3,10 @@
 .RData
 .Ruserdata
 *.Rout
+inst/*.tar.gz
+inst/*.Rcheck/
+inst/UScensus2020blkgrp/data/*.rda
+inst/UScensus2020block/data/*.rda
 inst/UScensus2020cdp/data/*.rda
 inst/UScensus2020county/data/*.rda
 inst/UScensus2020state/data/*.rda
