@@ -1,9 +1,12 @@
-Package: UScensuscounty20
+Package: UScensus2020county
 Title: Provides county level data for the 2020 United States census
 Version: 0.0.0.9000
 Authors@R: 
-    c(person("shreshtha", "modi", 
-    email="modishreshtha48@gmail.com", role = c( "cre")))
+    c(
+      person("Zach", "Almquist", "W.", email="zalmquist@uw.edu", role = c("cre")),
+      person("shreshtha", "modi", email="modishreshtha48@gmail.com", role = c( "aut")),
+      person("Neal", "Fultz", email="nfultz@gmail.com", role = c("aut"))
+    )
 Description: A data package for the US census 2020 package. Provides county level data and related shapefiles
 License: GPL (>= 3)
 Encoding: UTF-8
