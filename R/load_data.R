@@ -1,12 +1,13 @@
 
+# https://www2.census.gov/programs-surveys/decennial/rdo/about/2020-census-program/Phase3/SupportMaterials/FrequentSummaryLevels.pdf
 
 .pl94_levels <- c(
   state  = "040",
   county = "050",
   cdp = "160",
   tract  = "140",
-  blkgrp = "",
-  block = ""
+  blkgrp = "150",
+  block = "750"
 )
 
 
@@ -20,6 +21,9 @@ build_package_data <- function(level) {
   LEVEL <- match.arg(level, names(.pl94_levels))
 
   if(!file.info(DATA_DIR)$isdir) warning("$USCENSUS2020_DATA not set, downloads will be transient")
+
+  if(!file.info("data")$isdir) dir.create("data")
+
 
   for(state in rownames(urls)) {
     message("* ", state, " ", LEVEL, "\t" , appendLF = FALSE)
