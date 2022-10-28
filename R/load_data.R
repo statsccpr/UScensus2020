@@ -73,10 +73,10 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
   file3 <- grep("000032020.pl$", files, value = TRUE)
 
 
-  part0  <- read.delim(unz(temp, file0), header=FALSE, colClasses="character", sep="|")
-  part1  <- read.delim(unz(temp, file1), header=FALSE, colClasses="character", sep="|")
-  part2  <- read.delim(unz(temp, file2), header=FALSE, colClasses="character", sep="|")
-  part3  <- read.delim(unz(temp, file3), header=FALSE, colClasses="character", sep="|")
+  part0  <- read.delim(unz(temp, file0), header=FALSE, colClasses="character", sep="|", encoding="latin1")
+  part1  <- read.delim(unz(temp, file1), header=FALSE, colClasses="character", sep="|", encoding="latin1")
+  part2  <- read.delim(unz(temp, file2), header=FALSE, colClasses="character", sep="|", encoding="latin1")
+  part3  <- read.delim(unz(temp, file3), header=FALSE, colClasses="character", sep="|", encoding="latin1")
 
 
   colnames(part0) <- c("FILEID", "STUSAB", "SUMLEV", "GEOVAR", "GEOCOMP", "CHARITER", "CIFSN", "LOGRECNO", "GEOID",
