@@ -36,7 +36,7 @@ build_package_data <- function(level) {
 
     e <- load_data(state, LEVEL, urls[state, "pl94"], urls[state, LEVEL])
 
-    save(list=names(e), envir = e, file = out, compression_level = 9)
+    save(list=names(e), envir = e, file = out, compress = "xz", compression_level = 9)
     message("✓")
   }
 
@@ -126,6 +126,8 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
   xyz <- combine
 
 
+  xyz[, grep("^[PH]00", colnames(xyz))] <- lapply(xyz[, grep("^[PH]00", colnames(xyz))], as.numeric)
+
 
 
   ### Part 2: shape file
@@ -133,7 +135,7 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
   url <- shape_url
 
 
-  if(file.info(DATA_DIR)$isdir) {
+  if (file.info(DATA_DIR)$isdir) {
     temp_shapefile <- file.path(DATA_DIR, basename(url))
     if(!file.exists(temp_shapefile)) {
       download.file(url, temp_shapefile)
@@ -159,6 +161,25 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
   # merge, return an env that can be saved
 
   xyz<-merge(x=shapes[keeps], y=xyz,by.x="GEOID20" , by.y="GEOCODE")
+
+
+  ## Add comments to columns
+  Rd <- readLines(paste0("man/UScensus2020", level, ".Rd"))
+  m <- regexec("item..code\\{(.*)\\}.\\{(.*)\\}", Rd)
+  for(line in regmatches(Rd, m)) {
+    if(length(line) == 3 && line[2] %in% colnames(xyz)) {
+      comment(xyz[[line[2]]]) <- line[3]
+    }
+  }
+
+
+  ## Geohash
+  if (requireNamespace("geohash")) {
+    cent <- sf::st_centroid(xyz[,"geometry"])
+    cent <- matrix(unlist(cent), ncol=2, byrow = TRUE)
+    xyz$GEOHASH <- geohash::gh_encode(cent[,2], cent[,1], precision = 10)
+  }
+
 
 
   obj_name=paste0(state,level,"20")
