@@ -1,14 +1,16 @@
-Package: UScensusblock20
+Package: UScensus2020block
 Title: A data package for the US census 2020 package. Provides block level data and related shapefiles
 Version: 0.0.0.9000
 Authors@R: 
-    person("Shreshtha", "Modi", , "modishreshtha48@gmail.com", role = c("aut", "cre"))
-Description: A data package for the US census 2020 package. Provides block level data and related shapefiles
-License: GPL (>= 3)
+    c(
+      person("Zach W.", "Almquist", email="zalmquist@uw.edu", role = c("cre")),
+      person("Shreshtha", "Modi", email="modishreshtha48@gmail.com", role = c( "aut")),
+      person("Neal", "Fultz", email="nfultz@gmail.com", role = c("aut"))
+    )
+Description: Block level data and related shapefiles were provided by the US federal goverment.License: GPL (>= 3)
 Encoding: UTF-8
 Depends: R (>= 2.10)
-LazyData:TRUE
-Language: es
+LazyData:FALSE
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
 Compression: xz

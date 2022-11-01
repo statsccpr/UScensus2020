@@ -1,6 +1,6 @@
-#' UScensusblock20
-#' 
-#' This package contains county level data for the US census 2020 redistricting files and shape files.   
+#' UScensus2020block
+#'
+#' This package contains county level data for the US census 2020 redistricting files and shape files.
 #' \describe{
 #'   \item{\code{FILEID}}{File Identification}
 #'   \item{\code{STUSAB}}{State/US-Abbreviation (USPS)}
@@ -404,110 +404,110 @@
 #'   \item{\code{geometry}}{Geometric data for the shape. (Point, Multipoint, Polyline, Polygon,etc)}
 #' }
 #' @source \url{https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/}
-#' @name UScensusblock20
+#' @name UScensus2020block
 #' @keywords datasets
 NULL
-#' @rdname UScensusblock20
-"alabamablock20"
-#' @rdname UScensusblock20
-"alaskablock20"
-#' @rdname UScensusblock20
-"arizonablock20"
-#' @rdname UScensusblock20
-"arkansasblock20"
-#' @rdname UScensusblock20
-"californiablock20"
-#' @rdname UScensusblock20
-"coloradoblock20"
-#' @rdname UScensusblock  20
-"connecticutblock20"
-#' @rdname UScensusblock20
-"delawareblock20"
-#' @rdname UScensusblock20
+#' @rdname UScensus2020block
+"alblock20"
+#' @rdname UScensus2020block
+"akblock20"
+#' @rdname UScensus2020block
+"azblock20"
+#' @rdname UScensus2020block
+"arblock20"
+#' @rdname UScensus2020block
+"cablock20"
+#' @rdname UScensus2020block
+"coblock20"
+#' @rdname UScensus2020block
+"ctblock20"
+#' @rdname UScensus2020block
+"dblock20"
+#' @rdname UScensus2020block
 "dcblock20"
-#' @rdname UScensusblock20
-"floridablock20"
-#' @rdname UScensusblock20
-"georgiablock20"
-#' @rdname UScensusblock20
-"hawaiiblock20"
-#' @rdname UScensusblock20
-"idahoblock20"
-#' @rdname UScensusblock20
-"illinoisblock20"
-#' @rdname UScensusblock20
-"indianablock20"
-#' @rdname UScensusblock20
-"iowablock20"
-#' @rdname UScensusblock20
-"kansasblock20"
-#' @rdname UScensusblock20
-"kentuckyblock20"
-#' @rdname UScensusblock20
-"louisianablock20"
-#' @rdname UScensusblock20
-"maineblock20"
-#' @rdname UScensusblock20
-"marylandblock20"
-#' @rdname UScensusblock20
-"massachussetsblock20"
-#' @rdname UScensusblock20
-"michiganblock20"
-#' @rdname UScensusblock20
-"minnesotablock20"
-#' @rdname UScensusblock20
-"mississippiblock20"
-#' @rdname UScensusblock20
-"missouriblock20"
-#' @rdname UScensusblock20
-"montanablock20"
-#' @rdname UScensusblock20
-"nebraskablock20"
-#' @rdname UScensusblock20
-"nevadablock20"
-#' @rdname UScensusblock20
-"newhampshireblock20"
-#' @rdname UScensusblock20
-"newjerseyblock20"
-#' @rdname UScensusblock20
-"newmexicoblock20"
-#' @rdname UScensusblock20
-"newyorkblock20"
-#' @rdname UScensusblock20
-"northcarolinablock20"
-#' @rdname UScensusblock20
-"northdakotablock20"
-#' @rdname UScensusblock20
-"ohioblock20"
-#' @rdname UScensusblock20
-"oklahomablock20"
-#' @rdname UScensusblock20
-"oregonblock20"
-#' @rdname UScensusblock20
-"pennsylvaniablock20"
-#' @rdname UScensusblock20
-"puertoricoblock20"
-#' @rdname UScensusblock20
-"rhodeislandblock20"
-#' @rdname UScensusblock20
-"southcarolinablock20"
-#' @rdname UScensusblock20
-"southdakotablock20"
-#' @rdname UScensusblock20
-"tennesseblock20"
-#' @rdname UScensusblock20
-"texasblock20"
-#' @rdname UScensusblock20
-"utahblock20"
-#' @rdname UScensusblock20
-"vermontblock20"
-#' @rdname UScensusblock20
-"virginiablock20"
-#' @rdname UScensusblock20
-"washingtonblock20"
-#' @rdname UScensusblock20
-"westvirginiablock20"
-#' @rdname UScensusblock20
-"wisconsinblock20"
-#' @rdname UScensusblock20
-"wyomingblock20"
+#' @rdname UScensus2020block
+"flblock20"
+#' @rdname UScensus2020block
+"gablock20"
+#' @rdname UScensus2020block
+"hiblock20"
+#' @rdname UScensus2020block
+"idblock20"
+#' @rdname UScensus2020block
+"ilblock20"
+#' @rdname UScensus2020block
+"inblock20"
+#' @rdname UScensus2020block
+"iablock20"
+#' @rdname UScensus2020block
+"ksblock20"
+#' @rdname UScensus2020block
+"kyblock20"
+#' @rdname UScensus2020block
+"lablock20"
+#' @rdname UScensus2020block
+"meblock20"
+#' @rdname UScensus2020block
+"mdblock20"
+#' @rdname UScensus2020block
+"mablock20"
+#' @rdname UScensus2020block
+"miblock20"
+#' @rdname UScensus2020block
+"mnblock20"
+#' @rdname UScensus2020block
+"msblock20"
+#' @rdname UScensus2020block
+"moblock20"
+#' @rdname UScensus2020block
+"mtblock20"
+#' @rdname UScensus2020block
+"neblock20"
+#' @rdname UScensus2020block
+"nvblock20"
+#' @rdname UScensus2020block
+"nhblock20"
+#' @rdname UScensus2020block
+"njblock20"
+#' @rdname UScensus2020block
+"nmblock20"
+#' @rdname UScensus2020block
+"nyblock20"
+#' @rdname UScensus2020block
+"ncblock20"
+#' @rdname UScensus2020block
+"ndblock20"
+#' @rdname UScensus2020block
+"ohblock20"
+#' @rdname UScensus2020block
+"okblock20"
+#' @rdname UScensus2020block
+"orblock20"
+#' @rdname UScensus2020block
+"pablock20"
+#' @rdname UScensus2020block
+"prblock20"
+#' @rdname UScensus2020block
+"riblock20"
+#' @rdname UScensus2020block
+"scblock20"
+#' @rdname UScensus2020block
+"sdblock20"
+#' @rdname UScensus2020block
+"tnblock20"
+#' @rdname UScensus2020block
+"txblock20"
+#' @rdname UScensus2020block
+"utblock20"
+#' @rdname UScensus2020block
+"vtblock20"
+#' @rdname UScensus2020block
+"vablock20"
+#' @rdname UScensus2020block
+"wablock20"
+#' @rdname UScensus2020block
+"wvblock20"
+#' @rdname UScensus2020block
+"wiblock20"
+#' @rdname UScensus2020block
+"wyblock20"
