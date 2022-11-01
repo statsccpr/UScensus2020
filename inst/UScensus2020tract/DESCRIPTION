@@ -1,4 +1,4 @@
-Package: UScensustract20
+Package: UScensus2020tract
 Title: Provides tract level data for the 2020 United States census
 Version: 0.0.0.9000
 Authors@R: 

@@ -1,4 +1,4 @@
-#' UScensustract20
+#' UScensus2020tract
 #' This package contains tract level data for the US census 2020 redistricting files and shape files.
 #' \describe{
 #'   \item{\code{FILEID}}{File Identification}
@@ -403,111 +403,111 @@
 #'   \item{\code{geometry}}{Geometric data for the shape. (Point, Multipoint, Polyline, Polygon,etc)}
 #' }
 #' @source \url{https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/}
-#' @name UScensustract20 
+#' @name UScensus2020tract
 #' @keywords datasets
 NULL
-#' @rdname UScensustract20
-"alabamatract20"
-#' @rdname UScensustract20
-"alaskatract20"
-#' @rdname UScensustract20
-"arizonatract20"
-#' @rdname UScensustract20
-"arkansastract20"
-#' @rdname UScensustract20
-"californiatract20"
-#' @rdname UScensustract20
-"coloradotract20"
-#' @rdname UScensustract20
-"connecticuttract20"
-#' @rdname UScensustract20
-"delawaretract20"
-#' @rdname UScensustract20
+#' @rdname UScensus2020tract
+"altract20"
+#' @rdname UScensus2020tract
+"aktract20"
+#' @rdname UScensus2020tract
+"aztract20"
+#' @rdname UScensus2020tract
+"aktract20"
+#' @rdname UScensus2020tract
+"catract20"
+#' @rdname UScensus2020tract
+"cotract20"
+#' @rdname UScensus2020tract
+"cttract20"
+#' @rdname UScensus2020tract
+"detract20"
+#' @rdname UScensus2020tract
 "dctract20"
-#' @rdname UScensustract20
-"floridatract20"
-#' @rdname UScensustract20
-"georgiatract20"
-#' @rdname UScensustract20
-"hawaiitract20"
-#' @rdname UScensustract20
-"idahotract20"
-#' @rdname UScensustract20
-"illinoistract20"
-#' @rdname UScensustract20
-"indianatract20"
-#' @rdname UScensustract20
-"iowatract20"
-#' @rdname UScensustract20
-"kansastract20"
-#' @rdname UScensustract20
-"kentuckytract20"
-#' @rdname UScensustract20
-"louisianatract20"
-#' @rdname UScensustract20
-"mainetract20"
-#' @rdname UScensustract20
-"marylandtract20"
-#' @rdname UScensustract20
-"massachusettstract20"
-#' @rdname UScensustract20
-"michigantract20"
-#' @rdname UScensustract20
-"minnesotatract20"
-#' @rdname UScensustract20
-"mississippitract20"
-#' @rdname UScensustract20
-"missouritract20"
-#' @rdname UScensustract20
-"montanatract20"
-#' @rdname UScensustract20
-"nebraskatract20"
-#' @rdname UScensustract20
-"nevadatract20"
-#' @rdname UScensustract20
-"newhampshiretract20"
-#' @rdname UScensustract20
-"newjerseytract20"
-#' @rdname UScensustract20
-"newmexicotract20"
-#' @rdname UScensustract20
-"newyorktract20"
-#' @rdname UScensustract20
-"northcarolinatract20"
-#' @rdname UScensustract20
-"northdakotatract20"
-#' @rdname UScensustract20
-"ohiotract20"
-#' @rdname UScensustract20
-"oklahomatract20"
-#' @rdname UScensustract20
-"oregontract20"
-#' @rdname UScensustract20
-"pennsylvaniatract20"
-#' @rdname UScensustract20
-"puertoricotract20"
-#' @rdname UScensustract20
-"rhodeislandtract20"
-#' @rdname UScensustract20
-"southcarolinatract20"
-#' @rdname UScensustract20
-"southdakotatract20"
-#' @rdname UScensustract20
-"tennessetract20"
-#' @rdname UScensustract20
-"texastract20"
-#' @rdname UScensustract20
-"utahtract20"
-#' @rdname UScensustract20
-"vermonttract20"
-#' @rdname UScensustract20
-"virginiatract20"
-#' @rdname UScensustract20
-"washingtontract20"
-#' @rdname UScensustract20
-"westvirginiatract20"
-#' @rdname UScensustract20
-"wisconsintract20"
-#' @rdname UScensustract20
-"wyomingtract20"
+#' @rdname UScensus2020tract
+"fltract20"
+#' @rdname UScensus2020tract
+"gatract20"
+#' @rdname UScensus2020tract
+"hitract20"
+#' @rdname UScensus2020tract
+"idtract20"
+#' @rdname UScensus2020tract
+"iltract20"
+#' @rdname UScensus2020tract
+"intract20"
+#' @rdname UScensus2020tract
+"iatract20"
+#' @rdname UScensus2020tract
+"kstract20"
+#' @rdname UScensus2020tract
+"kytract20"
+#' @rdname UScensus2020tract
+"latract20"
+#' @rdname UScensus2020tract
+"metract20"
+#' @rdname UScensus2020tract
+"mdtract20"
+#' @rdname UScensus2020tract
+"matract20"
+#' @rdname UScensus2020tract
+"mitract20"
+#' @rdname UScensus2020tract
+"mntract20"
+#' @rdname UScensus2020tract
+"mstract20"
+#' @rdname UScensus2020tract
+"motract20"
+#' @rdname UScensus2020tract
+"mttract20"
+#' @rdname UScensus2020tract
+"netract20"
+#' @rdname UScensus2020tract
+"nvtract20"
+#' @rdname UScensus2020tract
+"nhtract20"
+#' @rdname UScensus2020tract
+"njtract20"
+#' @rdname UScensus2020tract
+"nmtract20"
+#' @rdname UScensus2020tract
+"nytract20"
+#' @rdname UScensus2020tract
+"nctract20"
+#' @rdname UScensus2020tract
+"ndtract20"
+#' @rdname UScensus2020tract
+"ohtract20"
+#' @rdname UScensus2020tract
+"oktract20"
+#' @rdname UScensus2020tract
+"ortract20"
+#' @rdname UScensus2020tract
+"patract20"
+#' @rdname UScensus2020tract
+"prtract20"
+#' @rdname UScensus2020tract
+"ritract20"
+#' @rdname UScensus2020tract
+"sctract20"
+#' @rdname UScensus2020tract
+"sdtract20"
+#' @rdname UScensus2020tract
+"tntract20"
+#' @rdname UScensus2020tract
+"txtract20"
+#' @rdname UScensus2020tract
+"uttract20"
+#' @rdname UScensus2020tract
+"vttract20"
+#' @rdname UScensus2020tract
+"vatract20"
+#' @rdname UScensus2020tract
+"watract20"
+#' @rdname UScensus2020tract
+"wvtract20"
+#' @rdname UScensus2020tract
+"witract20"
+#' @rdname UScensus2020tract
+"wytract20"
 
