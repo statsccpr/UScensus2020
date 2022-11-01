@@ -3,5 +3,4 @@
 export(check_state)
 export(get_fips)
 export(install.county)
-export(load_api_list)
 export(metadata)

@@ -15,4 +15,3 @@ demographics<- function(dem = "P0010001", state="alabama", statefips = FALSE, le
    b=temp[, c("BASENAME",dem)]
   return(b)
 }
-envir=.Glo

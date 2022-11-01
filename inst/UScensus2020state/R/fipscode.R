@@ -5,7 +5,7 @@
 #' @export
 get_fips <- function(state,countyname=NULL,level=c("state","county")){
   #checks if the state is proper
-  if(length(state)>0&check_state(state)=state){
+  if(length(state)>0&check_state(state)==state){
     #loads the data statefips, consists of the state name and the fips code. Since the county df only has fips code, need them, for level=state, this returns the fips code
     data("statefips",envir=.GlobalEnv)
     #subsetting based on value and returns the fips code
