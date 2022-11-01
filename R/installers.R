@@ -1,6 +1,7 @@
 #' Data package installers
 #'
 #' @return nothing, called to install a data package
+#' @name installers
 NULL
 
 #' @export

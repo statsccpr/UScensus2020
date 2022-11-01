@@ -6,5 +6,5 @@
 # Use the below one-liner to pre-seed a build cache for packages:
 # grep -Eo 'https?:[^,]*' ~/projects/UScensus2020/data/urls.csv | wget -nc -i -
 
-urls <- read.csv("urls.csv", row.names = 1, stringsAsFactors = FALSE)
+urls <- utils::read.csv("urls.csv", row.names = 1, stringsAsFactors = FALSE)
 

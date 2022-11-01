@@ -10,10 +10,11 @@ e <- new.env()
 lapply(states, load, envir=e)
 states20 <- do.call(rbind, as.list(e))
 
-save(states20, file = "data/states20.rda")
-
 for(i in names(states20)){
   comment(states20[[i]]) <- comment(e$akstate20[[i]])
 }
+
+
+save(states20, file = "data/states20.rda")
 
 unlink(states)
