@@ -1,11 +1,14 @@
-Package: USCensus2020
+Package: USCensus2020state
 Type: Package
 Title: Provides access to the 2020 census data in R
 Version: 0.1.0
-Author: shreshtha modi <modishreshtha48@gmail.com>
-Maintainer: shreshtha modi <modishreshtha48@gmail.com>
-Description: This packages provides the access to the 2020 redistricting data and the helper functions which are used to better access and format the data
-URL: https://github.com/shreshtha48/USCensus2020
+Authors@R: 
+    c(
+      person("Zach W.", "Almquist", email="zalmquist@uw.edu", role = c("cre")),
+      person("Shreshtha", "Modi", email="modishreshtha48@gmail.com", role = c( "aut")),
+      person("Neal", "Fultz", email="nfultz@gmail.com", role = c("aut"))
+    )
+Description: State level data and related shapefiles were provided by the US federal goverment.URL: https://github.com/shreshtha48/USCensus2020
 License: GPL (>= 3)
 Encoding: UTF-8
 Depends: R (>= 2.10)
