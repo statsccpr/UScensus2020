@@ -1,13 +1,17 @@
-Package: UScensuscdp20
+Package: UScensus2020cdp
 Title: Provides cdp level data for the 2020 United States census
 Version: 0.0.0.9000
 Authors@R: 
-    person("Shreshtha", "Modi", , "modishreshtha48@gmail.com", role = c("aut", "cre"))
-Description:  A data package for the US census 2020 package. Provides cdp level data and related shapefiles
+    c(
+      person("Zach W.", "Almquist", email="zalmquist@uw.edu", role = c("cre")),
+      person("Shreshtha", "Modi", email="modishreshtha48@gmail.com", role = c( "aut")),
+      person("Neal", "Fultz", email="nfultz@gmail.com", role = c("aut"))
+    )
+Description: Place level data and related shapefiles were provided by the US federal goverment.
 License: GPL (>= 3)
 Encoding: UTF-8
-Language: es
 Roxygen: list(markdown = TRUE)
 Imports: sf
 RoxygenNote: 7.2.1
-
+Depends: 
+    R (>= 3.5)

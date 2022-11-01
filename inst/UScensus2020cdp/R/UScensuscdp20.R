@@ -1,6 +1,6 @@
-#' UScensuscdp20
-#' 
-#' This package contains cdp level data for the US census 2020 redistricting files and shape files. 
+#' UScensus2020cdp
+#'
+#' This package contains cdp level data for the US census 2020 redistricting files and shape files.
 #' \describe{
 #'   \item{\code{FILEID}}{File Identification}
 #'   \item{\code{STUSAB}}{State/US-Abbreviation (USPS)}
@@ -404,114 +404,114 @@
 #'   \item{\code{geometry}}{Geometric data for the shape. (Point, Multipoint, Polyline, Polygon,etc)}
 #' }
 #' @source \url{https://www2.census.gov/programs-surveys/decennial/2020/data/01-Redistricting_File--PL_94-171/}
-#' @name UScensuscdp20
+#' @name UScensus2020cdp
 #' @keywords datasets
 NULL
-#' @rdname UScensuscdp20
-"alabamacdp20"
-#' @rdname UScensuscdp20
-"alaskacdp20"
-#' @rdname UScensuscdp20
-"arizonacdp20"
-#' @rdname UScensuscdp20
-"arkansascdp20"
-#' @rdname UScensuscdp20
-"californiacdp20"
-#' @rdname UScensuscdp20
-"coloradocdp20"
-#' @rdname UScensuscdp20
-"connecticutcdp20"
-#' @rdname UScensuscdp20
-"delawarecdp20"
-#' @rdname UScensuscdp20
+#' @rdname UScensus2020cdp
+"alcdp20"
+#' @rdname UScensus2020cdp
+"akcdp20"
+#' @rdname UScensus2020cdp
+"azcdp20"
+#' @rdname UScensus2020cdp
+"arcdp20"
+#' @rdname UScensus2020cdp
+"cacdp20"
+#' @rdname UScensus2020cdp
+"cocdp20"
+#' @rdname UScensus2020cdp
+"ctcdp20"
+#' @rdname UScensus2020cdp
+"decdp20"
+#' @rdname UScensus2020cdp
 "dccdp20"
-#' @rdname UScensuscdp20
-"floridacdp20"
-#' @rdname UScensuscdp20
-"georgiacdp20"
-#' @rdname UScensuscdp20
-"hawaiicdp20"
-#' @rdname UScensuscdp20
-"idahocdp20"
-#' @rdname UScensuscdp20
-"illinoiscdp20"
-#' @rdname UScensuscdp20
-"indianacdp20"
-#' @rdname UScensuscdp20
-"iowacdp20"
-#' @rdname UScensuscdp20
-"kansascdp20"
-#' @rdname UScensuscdp20
-"kentuckycdp20"
-#' @rdname UScensuscdp20
-"louisianacdp20"
-#' @rdname UScensuscdp20
-"mainecdp20"
-#' @rdname UScensuscdp20
-"marylandcdp20"
-#' @rdname UScensuscdp20
-"massachussettscdp20"
-#' @rdname UScensuscdp20
-"michigancdp20"
-#' @rdname UScensuscdp20
-"minnesotacdp20"
-#' @rdname UScensuscdp20
-"mississippicdp20"
-#' @rdname UScensuscdp20
-"missouricdp20"
-#' @rdname UScensuscdp20
-"montanacdp20"
-#' @rdname UScensuscdp20
-"nebraskacdp20"
-#' @rdname UScensuscdp20
-"nevadacdp20"
-#' @rdname UScensuscdp20
-"newhampshirecdp20"
-#' @rdname UScensuscdp20
-"newjerseycdp20"
-#' @rdname UScensuscdp20
-"newmexicocdp20"
-#' @rdname UScensuscdp20
-"newyorkcdp20"
-#' @rdname UScensuscdp20
-"northcarolinacdp20"
-#' @rdname UScensuscdp20
-"northdakotacdp20"
-#' @rdname UScensuscdp20
-"ohiocdp20"
-#' @rdname UScensuscdp20
-"oklahomacdp20"
-#' @rdname UScensuscdp20
-"oregoncdp20"
-#' @rdname UScensuscdp20
-"pennsylvaniacdp20"
-#' @rdname UScensuscdp20
-"puertoricocdp20"
-#' @rdname UScensuscdp20
-"rhodeislandcdp20"
-#' @rdname UScensuscdp20
-"southcarolinacdp20"
-#' @rdname UScensuscdp20
-"southdakotacdp20"
-#' @rdname UScensuscdp20
-"tennessecdp20"
-#' @rdname UScensuscdp20
-"texascdp20"
-#' @rdname UScensuscdp20
-"utahcdp20"
-#' @rdname UScensuscdp20
-"vermontcdp20"
-#' @rdname UScensuscdp20
-"virginiacdp20"
-#' @rdname UScensuscdp20
-"washingtoncdp20"
-#' @rdname UScensuscdp20
-"westvirginiacdp20"
-#' @rdname UScensuscdp20
-"wisconsincdp20"
-#' @rdname UScensuscdp20
-"wyomingcdp20"
-#' @examples  
+#' @rdname UScensus2020cdp
+"flcdp20"
+#' @rdname UScensus2020cdp
+"gacdp20"
+#' @rdname UScensus2020cdp
+"hicdp20"
+#' @rdname UScensus2020cdp
+"idcdp20"
+#' @rdname UScensus2020cdp
+"ilcdp20"
+#' @rdname UScensus2020cdp
+"incdp20"
+#' @rdname UScensus2020cdp
+"iacdp20"
+#' @rdname UScensus2020cdp
+"kscdp20"
+#' @rdname UScensus2020cdp
+"kycdp20"
+#' @rdname UScensus2020cdp
+"lacdp20"
+#' @rdname UScensus2020cdp
+"mecdp20"
+#' @rdname UScensus2020cdp
+"mdcdp20"
+#' @rdname UScensus2020cdp
+"macdp20"
+#' @rdname UScensus2020cdp
+"micdp20"
+#' @rdname UScensus2020cdp
+"mncdp20"
+#' @rdname UScensus2020cdp
+"mscdp20"
+#' @rdname UScensus2020cdp
+"mocdp20"
+#' @rdname UScensus2020cdp
+"mtcdp20"
+#' @rdname UScensus2020cdp
+"necdp20"
+#' @rdname UScensus2020cdp
+"nvcdp20"
+#' @rdname UScensus2020cdp
+"nhcdp20"
+#' @rdname UScensus2020cdp
+"njcdp20"
+#' @rdname UScensus2020cdp
+"nmcdp20"
+#' @rdname UScensus2020cdp
+"nycdp20"
+#' @rdname UScensus2020cdp
+"nccdp20"
+#' @rdname UScensus2020cdp
+"ndcdp20"
+#' @rdname UScensus2020cdp
+"ohcdp20"
+#' @rdname UScensus2020cdp
+"okcdp20"
+#' @rdname UScensus2020cdp
+"orcdp20"
+#' @rdname UScensus2020cdp
+"pacdp20"
+#' @rdname UScensus2020cdp
+"prcdp20"
+#' @rdname UScensus2020cdp
+"ricdp20"
+#' @rdname UScensus2020cdp
+"sccdp20"
+#' @rdname UScensus2020cdp
+"sdcdp20"
+#' @rdname UScensus2020cdp
+"tncdp20"
+#' @rdname UScensus2020cdp
+"txcdp20"
+#' @rdname UScensus2020cdp
+"utcdp20"
+#' @rdname UScensus2020cdp
+"vtcdp20"
+#' @rdname UScensus2020cdp
+"vacdp20"
+#' @rdname UScensus2020cdp
+"wacdp20"
+#' @rdname UScensus2020cdp
+"wvcdp20"
+#' @rdname UScensus2020cdp
+"wicdp20"
+#' @rdname UScensus2020cdp
+"wycdp20"
+#' @examples
 #' plot(alabamacdp20$geometry)
-#'\dontrun{ plot(puertoricocdp20$geometry) }
+#'\dontrun{ plot(prcdp20$geometry) }
 

@@ -2,5 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
+DATASET.Rout
 ^.*\.Rproj$
 ^\.Rproj\.user$
