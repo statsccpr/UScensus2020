@@ -20,9 +20,9 @@ build_package_data <- function(level) {
 
   LEVEL <- match.arg(level, names(.pl94_levels))
 
-  if(!file.info(DATA_DIR)$isdir) warning("$USCENSUS2020_DATA not set, downloads will be transient")
+  if(!isTRUE(file.info(DATA_DIR)$isdir)) warning("$USCENSUS2020_DATA not set, downloads will be transient")
 
-  if(!file.info("data")$isdir) dir.create("data")
+  if(!isTRUE(file.info("data")$isdir)) dir.create("data")
 
 
   for(state in rownames(urls)) {
@@ -51,7 +51,7 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
 
   DATA_DIR <- Sys.getenv("USCENSUS2020_DATA")
 
-  if(file.info(DATA_DIR)$isdir) {
+  if(isTRUE(file.info(DATA_DIR)$isdir)) {
     temp <- file.path(DATA_DIR, basename(url))
     if(!file.exists(temp)) {
       download.file(url, temp)
@@ -135,7 +135,7 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
   url <- shape_url
 
 
-  if (file.info(DATA_DIR)$isdir) {
+  if (isTRUE(file.info(DATA_DIR)$isdir)) {
     temp_shapefile <- file.path(DATA_DIR, basename(url))
     if(!file.exists(temp_shapefile)) {
       download.file(url, temp_shapefile)
@@ -164,11 +164,14 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
 
 
   ## Add comments to columns
-  Rd <- readLines(paste0("man/UScensus2020", level, ".Rd"))
-  m <- regexec("item..code\\{(.*)\\}.\\{(.*)\\}", Rd)
-  for(line in regmatches(Rd, m)) {
-    if(length(line) == 3 && line[2] %in% colnames(xyz)) {
-      comment(xyz[[line[2]]]) <- line[3]
+  Rd <- paste0("man/UScensus2020", level, ".Rd")
+  if(!is.na(file.info(Rd)$size)) {
+    Rd <- readLines(Rd)
+    m <- regexec("item..code\\{(.*)\\}.\\{(.*)\\}", Rd)
+    for(line in regmatches(Rd, m)) {
+      if(length(line) == 3 && line[2] %in% colnames(xyz)) {
+        comment(xyz[[line[2]]]) <- line[3]
+      }
     }
   }
 
@@ -176,8 +179,8 @@ load_data <- function (state, level, pl94_url, shape_url=NULL){
   ## Geohash
   if (requireNamespace("geohash")) {
     cent <- sf::st_centroid(xyz[,"geometry"])
-    cent <- matrix(unlist(cent), ncol=2, byrow = TRUE)
-    xyz$GEOHASH <- geohash::gh_encode(cent[,2], cent[,1], precision = 10)
+    cent <- sf::st_coordinates(cent)
+    xyz$GEOHASH <- geohash::gh_encode(lngs=cent[,"X"], lats=cent[,"Y"], precision = 10)
   }
 
 
