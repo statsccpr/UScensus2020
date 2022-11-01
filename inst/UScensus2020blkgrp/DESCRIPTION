@@ -1,10 +1,15 @@
-Package: UScensusblockgroup20
+Package: UScensus2020blkgrp
 Title: Provides block-group level data for the 2020 United States census
 Version: 0.0.0.9000
 Description: A data package for the US census 2020 package. Provides blockgroup level data and related shapefiles
 Type: Package
-Author: Shreshtha Modi
-Maintainer: Shreshtha Modi <modishreshtha48@gmail.com>
+Authors@R: 
+    c(
+      person("Zach W.", "Almquist", email="zalmquist@uw.edu", role = c("cre")),
+      person("Shreshtha", "Modi", email="modishreshtha48@gmail.com", role = c( "aut")),
+      person("Neal", "Fultz", email="nfultz@gmail.com", role = c("aut"))
+    )
+Description: Block Group level data and related shapefiles were provided by the US federal goverment.
 License: GPL (>= 3)
 Encoding: UTF-8
 Language: es
